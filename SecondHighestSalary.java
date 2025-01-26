@@ -34,8 +34,7 @@ public class SecondHighestSalary {
             new Employee("ajay", 6000),
             new Employee("aman", 8000)
         );
-
-        
+ 
         Optional<Integer> secondHighestSalary = employees.stream()
             .map(Employee::getSalary) 
             .distinct()               

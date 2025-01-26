@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-class Main {
+public class wordLengthMap {
     public static void main(String[] args) {
  List<String> words = Arrays.asList("one", "two", "three");
         Map<String, Integer> wordLengthMap = words.stream()
