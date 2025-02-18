@@ -48,5 +48,17 @@ public class SecondHighestSalary {
         } else {
             System.out.println("Not enough data to find the second-highest salary.");
         }
+        System.out.println("top three highest salary.");
+        
+        List<Employee> topPaidEmployee = employees.stream()
+
+                .sorted((e1, e2) -> Double.compare(e2.getSalary(), e1.getSalary()))
+
+                .limit(3)
+
+                .collect(Collectors.toList());
+
+
+        topPaidEmployee.forEach(System.out::println);
     }
 }
